@@ -44,7 +44,7 @@ const Chat = () => {
                     },
                });
           }
-     }, [subscriptionData, subscriptionError]);
+     }, [subscriptionData, subscriptionError, dispatch, user.username]);
 
      return (
           <div className="chat">

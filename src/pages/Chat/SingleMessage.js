@@ -1,8 +1,4 @@
-import { BiSmile } from "react-icons/bi";
-
 const SingleMessage = ({ message, user }) => {
-     const reactions = ["❤️", "😆", "😯", "😢", "😡", "👍", "👎"];
-
      return (
           <div
                key={message.uuid}
