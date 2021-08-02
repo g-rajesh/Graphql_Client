@@ -27,10 +27,8 @@ const authLink = setContext((_, { headers }) => {
 
 httpLink = authLink.concat(httpLink);
 
-const host = window.location.host;
-
 const wsLink = new WebSocketLink({
-     uri: `ws://${host}/graphql/`,
+     uri: `ws://tele-chat.herokuapp.com/graphql/`,
      options: {
           reconnect: true,
           connectionParams: {
