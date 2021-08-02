@@ -11,8 +11,7 @@ import { WebSocketLink } from "@apollo/client/link/ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 
 let httpLink = createHttpLink({
-     // uri: "http://localhost:4000/graphql",
-     uri: "/graphql/",
+     uri: "https://lets-chat-with-me.herokuapp.com/graphql/",
 });
 
 const authLink = setContext((_, { headers }) => {
